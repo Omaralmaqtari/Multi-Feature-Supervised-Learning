@@ -34,19 +34,19 @@ MFSL combines:
 
 ---
 <p align="center">
-  <img src="Figures/model_architecture.png" alt="MFSL model architecture" width="95%">
+  <img src="Multi-Feature-Supervised-Learning/Figures/model_architecture.png" alt="MFSL model architecture" width="95%">
 </p>
 
 **Figure 1.** MFSL architecture and the proposed basic blocks.
 
 <p align="center">
-  <img src="Figures/learning_algorithm.png" alt="MFSL learning algorithm" width="95%">
+  <img src="Multi-Feature-Supervised-Learning/Figures/learning_algorithm.png" alt="MFSL learning algorithm" width="95%">
 </p>
 
 **Figure 2.** Distillation–Seed–Segmentation training process.
 
 <p align="center">
-  <img src="Figures/k_estimation.png" alt="Adaptive K estimation" width="90%">
+  <img src="Multi-Feature-Supervised-Learning/Figures/k_estimation.png" alt="Adaptive K estimation" width="90%">
 </p>
 
 **Figure 3.** Adaptive K estimation from the normalized RGB histogram.
