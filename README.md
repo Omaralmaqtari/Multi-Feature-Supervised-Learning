@@ -33,20 +33,21 @@ MFSL combines:
 - Soft candidate voting, mask memory, and cyclic pseudo-mask fusion.
 
 ---
+
 <p align="center">
-  <img src="Multi-Feature-Supervised-Learning/Figures/model_architecture.png" alt="MFSL model architecture" width="95%">
+  <img src="https://github.com/Omaralmaqtari/Multi-Feature-Supervised-Learning/blob/main/Figures/learning%20algorithm.png" alt="MFSL learning algorithm" width="33%">
 </p>
 
-**Figure 1.** MFSL architecture and the proposed basic blocks.
+**Figure 1.** Distillation–Seed–Segmentation training process.
 
 <p align="center">
-  <img src="Multi-Feature-Supervised-Learning/Figures/learning_algorithm.png" alt="MFSL learning algorithm" width="95%">
+  <img src="https://github.com/Omaralmaqtari/Multi-Feature-Supervised-Learning/blob/main/Figures/model%20architecture.png" alt="MFSL model architecture" width="33%">
 </p>
 
-**Figure 2.** Distillation–Seed–Segmentation training process.
+**Figure 2.** MFSL architecture and the proposed basic blocks.
 
 <p align="center">
-  <img src="Multi-Feature-Supervised-Learning/Figures/k_estimation.png" alt="Adaptive K estimation" width="90%">
+  <img src="https://github.com/Omaralmaqtari/Multi-Feature-Supervised-Learning/blob/main/Figures/K%20estimation.png?raw=true" alt="Adaptive K estimation" width="33%">
 </p>
 
 **Figure 3.** Adaptive K estimation from the normalized RGB histogram.
@@ -55,11 +56,11 @@ MFSL combines:
 
 ## Requirements
 
-A CUDA-capable GPU is strongly recommended.
+A CUDA-capable GPU.
 
 ### Core packages
 
-- Python 3.10+
+- Python 3.12+
 - PyTorch
 - torchvision
 - NumPy
@@ -117,7 +118,7 @@ datasets/
 
 ## Pretrained weights
 
-Place the uploaded checkpoints in `models/`.
+Place the uploaded checkpoints in `weights/`.
 
 The training code builds checkpoint names using:
 
