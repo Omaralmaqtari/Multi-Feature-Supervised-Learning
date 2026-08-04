@@ -112,11 +112,11 @@ if __name__ == '__main__':
                 parser.add_argument("--memory_metric", type=str, default="iou", help="dice, iou")
 
                 # paths
-                parser.add_argument('--model_path', type=str, default='/...')
-                parser.add_argument('--result_path', type=str, default='/...')
-                parser.add_argument('--sr_path', type=str, default='/...')
+                parser.add_argument('--model_path', type=str, default='/...', help='put here the dir where you want to save the weights at training or where you want to read the pretrained weights at inference')
+                parser.add_argument('--result_path', type=str, default='/...', help='put here the dir where you want to save the results')
+                parser.add_argument('--sr_path', type=str, default='/...', help='put here the dir where you want to save the segmentation outputs')
                 parser.add_argument('--dataset_path', type=str,
-                                    default='/.../' + dataset + subset)
+                                    default='/.../' + dataset + subset, help='put here the parent dir where the dataset will be read-if there is no subset it will be replaced with blank, check the if condition at the subset assignment')
 
                 cfg = parser.parse_args()
                 main(cfg)
