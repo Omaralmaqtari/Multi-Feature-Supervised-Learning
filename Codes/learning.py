@@ -61,14 +61,17 @@ class Learner(object):
                                                                                   selected_index=memory_selected_index,
                                                                                   sample_ids=sample_ids)
 
-        if self.counter >= 0 and self.counter <= self.steps*2:
+        if self.counter >= 0 and self.counter <= self.steps*1:
             sgt = ((0.5*sr1.detach()) + (0.3*mgt) + (0.2*mask))
             self.counter += 1
-        elif self.counter > self.steps*2 and self.counter <= self.steps*4:
+        elif self.counter > self.steps*1 and self.counter <= self.steps*2:
             sgt = ((0.3*sr1.detach()) + (0.5*mgt) + (0.2*mask))
             self.counter += 1
-        elif self.counter > self.steps*4:
+        elif self.counter > self.steps*2 and self.counter <= self.steps*3:
             sgt = ((0.3*sr1.detach()) + (0.2*mgt) + (0.5*mask))
+            self.counter += 1
+	elif self.counter > self.steps*3:
+            sgt = ((0.33*sr1.detach()) + (0.33*mgt) + (0.33*mask))
             self.counter = 0
 
         sgt[sgt < 0.5] = 0.0
